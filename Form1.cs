@@ -24,6 +24,7 @@ namespace TracePlays
         string urlHockey = string.Empty;
         string gameDate = string.Empty;
         string outputDir = "TP_OUT";
+        double progVer = 1.0;
 
         List<string> searchResultList = new List<string>();
         int searchIndex = 0;
@@ -37,7 +38,7 @@ namespace TracePlays
         {
             GetUrl();
             richTextBox1.SelectionAlignment = HorizontalAlignment.Center;
-
+            this.Text = $"Trace Place (v. {progVer})";
         }
 
         private void GetUrl()
